@@ -2,10 +2,10 @@
 FROM nginx
 
 # Copy the index.html file to the default Nginx location
-COPY web.html /usr/share/nginx/html
+COPY index.html /usr/share/nginx/html
 COPY event.jpg /usr/share/nginx/html
 # Expose port 80
-EXPOSE 9055
+EXPOSE 9058
 
 # Start Nginx server
 CMD ["nginx", "-g", "daemon off;"]
