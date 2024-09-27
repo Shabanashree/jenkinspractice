@@ -5,7 +5,7 @@ FROM nginx:alpine
 COPY web.html /usr/share/nginx/html
 COPY event.jpg /usr/share/nginx/html
 # Expose port 80
-EXPOSE 9050
+EXPOSE 9052
 
 # Start Nginx server
 CMD ["nginx", "-g", "daemon off;"]
